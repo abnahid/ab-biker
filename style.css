@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color1: #0b0d17;
+  --btn-color: #e76f51;
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+main section {
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  background-color: #264653;
+}
+.banner {
+  max-width: 1040px;
+  margin: 0 auto;
+  color: var(--bg-color);
+}
+span {
+  color: var(--btn-color);
+}
+/* Navigation Section */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul,
+nav h3 {
+  margin: 30px 0;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  gap: 30px;
+  text-decoration: none;
+  list-style: none;
+  /* margin-top: 30px; */
+}
+
+.home-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.home-contant {
+  width: 490px;
+}
+.home-title {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.home-sub-title {
+  font-size: 14px;
+  font-weight: 300;
+}
+.home-description {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 21px;
+}
+.home-image {
+  width: 552px;
+  height: 447px;
+}
+
+.home-image img {
+  width: 100%;
+}
+
+.btn {
+  color: var(--bg-color);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 5px;
+  background: var(--btn-color);
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.section-description {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--btn-color);
+}
+
+/* featured-container */
+
+.featured-container {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.featured-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.featured-title hr {
+  margin-top: 3px;
+  width: 58.5px;
+  border: 1px solid rgb(231, 111, 81);
+}
+.bikes-images {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 120px;
+  gap: 138;
+  border: 5px solid red;
+}
+.bike-image img {
+  width: 100%;
+}
+
+/* latest News Section */
+.latest-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blogs-card {
+  margin-top: 57px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog-card {
+  width: 377px;
+  margin-left: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(255, 255, 255);
+}
+.blog-card img {
+  width: 100%;
+}
+.blog-card h5 {
+  margin-top: 40px;
+  font-size: 28px;
+  font-weight: 600;
+}
+.blog-card p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.blog-card > .btn {
+  margin-top: 40px;
+}
+
+.blog-card .btn-2 {
+  border: 1px solid rgb(231, 111, 81);
+  background-color: var(--bg-color);
+  color: var(--btn-color);
+}
+
+.clients-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.clients-review {
+  margin-top: 57px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.client-review {
+  width: 377px;
+  margin-left: 44px;
+  padding: 40px 35px;
+  box-sizing: border-box;
+  border: 1px solid rgb(222, 222, 222);
+  background: var(--bg-color);
+}
+.client-review img {
+  width: 100%;
+}
+.client-review h5 {
+  margin-top: 40px;
+  font-size: 28px;
+  font-weight: 600;
+}
+.client-review p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
