@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
 * {
   margin: 0;
@@ -21,15 +22,9 @@ main {
 }
 
 main section {
-  margin-top: 130px;
-  margin-bottom: 130px;
+  margin: 150px 0;
 }
 
-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 header {
   background-color: #264653;
 }
@@ -117,7 +112,6 @@ nav ul {
 }
 
 /* featured-container */
-
 .featured-container {
   flex-direction: column;
   display: flex;
@@ -154,7 +148,6 @@ nav ul {
   justify-content: center;
   align-items: center;
 }
-
 .blogs-card {
   margin-top: 57px;
   display: flex;
@@ -182,17 +175,16 @@ nav ul {
   font-size: 16px;
   font-weight: 400;
 }
-
 .blog-card > .btn {
   margin-top: 40px;
 }
-
 .blog-card .btn-2 {
   border: 1px solid rgb(231, 111, 81);
   background-color: var(--bg-color);
   color: var(--btn-color);
 }
 
+/* Happy Clients Section */
 .clients-container {
   display: flex;
   flex-direction: column;
@@ -206,6 +198,11 @@ nav ul {
   align-items: center;
 }
 .client-review {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
   width: 377px;
   margin-left: 44px;
   padding: 40px 35px;
@@ -216,13 +213,110 @@ nav ul {
 .client-review img {
   width: 100%;
 }
-.client-review h5 {
-  margin-top: 40px;
-  font-size: 28px;
+.client-review h4 {
+  font-size: 20px;
   font-weight: 600;
 }
 .client-review p {
   margin-top: 10px;
   font-size: 16px;
   font-weight: 400;
+  text-align: center;
+}
+.colhc {
+  color: rgb(35, 166, 240);
+}
+.star-solid {
+  width: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Frequently Asked Questions Section */
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.faq-container h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.faq-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 120px;
+}
+.faq-image {
+  width: 100%;
+}
+.faq-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.question {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.answer {
+  font-size: 16px;
+  font-weight: 400;
+  color: #7e848c;
+}
+
+.faq {
+  padding: 20px 24px 20px 24px;
+  box-sizing: border-box;
+  border: 1px solid rgb(213, 229, 251);
+  border-radius: 5px;
+  background: rgb(255, 255, 255);
+}
+/* Footer Section */
+footer {
+  height: 365px;
+  background-color: var(--text-color1);
+  color: var(--bg-color);
+  display: flex;
+  /* justify-content: cen; */
+  align-items: center;
+}
+.footer-container {
+  margin: 0 165px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+}
+.footer-1 {
+  display: flex;
+  flex-direction: column;
+}
+.footer-1 ul {
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  gap: 24px;
+  margin-top: 12px;
+}
+.footer-1 p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 24px;
+}
+.footer-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+.footer-2 p {
+  font-size: 20px;
+  font-weight: 500;
 }
