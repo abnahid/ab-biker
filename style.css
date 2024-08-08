@@ -31,6 +31,7 @@ header {
 
 span {
   color: var(--btn-color);
+  margin-left: 10px;
 }
 
 /* Navigation Section */
@@ -54,7 +55,9 @@ nav ul {
   text-decoration: none;
   list-style: none;
 }
-
+.nav-icon {
+  display: none;
+}
 /* Header Section */
 #banner {
   height: 754px;
@@ -131,17 +134,16 @@ nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  flex-direction: row;
   margin: 120px;
-  border: 5px solid red;
 }
 .bike-image {
   flex: 1;
   margin: 10px;
-  max-width: 30%;
+  width: 30%;
 }
 .bike-image img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
 }
@@ -326,4 +328,69 @@ footer {
 .footer-2 p {
   font-size: 20px;
   font-weight: 500;
+}
+
+@media screen and (max-width: 992px) {
+  .nav-icon {
+    display: block;
+  }
+
+  .nav-icon i {
+    font-size: 35px;
+    margin-right: 20px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  section {
+    margin: 80px 15px;
+  }
+
+  #banner {
+    padding: 0 15px;
+  }
+
+  .home-contant {
+    width: 100%;
+  }
+
+  .bikes-images,
+  .blogs-card,
+  .clients-review,
+  .faq-content {
+    flex-direction: column;
+    margin: 50px;
+    gap: 20px;
+  }
+
+  .bike-image,
+  .blog-card,
+  .bike-image,
+  .client-review {
+    width: 70%;
+  }
+
+  .section-title {
+    font-size: 38px;
+    font-weight: 700;
+  }
+  .faq-image {
+    width: 70%;
+    height: auto;
+  }
+
+  .footer-container {
+    gap: 50px;
+    padding: 0 30px;
+  }
+
+  footer {
+    height: auto;
+  }
+
+  .footer-1 p {
+    display: none;
+  }
 }
