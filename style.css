@@ -357,8 +357,11 @@ footer {
 
   .home-content {
     width: 100%;
+    margin-top: 50px;
   }
-
+  .home-title {
+    line-height: 80px;
+  }
   .bikes-images,
   .blogs-card,
   .clients-review,
@@ -384,7 +387,9 @@ footer {
     width: 70%;
     height: auto;
   }
-
+  .faq-image img {
+    width: 100%;
+  }
   .footer-container {
     gap: 50px;
     padding: 0 30px;
