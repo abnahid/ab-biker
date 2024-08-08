@@ -28,14 +28,11 @@ main section {
 header {
   background-color: #264653;
 }
-.banner {
-  max-width: 1040px;
-  margin: 0 auto;
-  color: var(--bg-color);
-}
+
 span {
   color: var(--btn-color);
 }
+
 /* Navigation Section */
 nav {
   display: flex;
@@ -44,6 +41,8 @@ nav {
 }
 nav ul,
 nav h3 {
+  font-size: 35px;
+  font-weight: 700;
   margin: 30px 0;
 }
 nav ul {
@@ -54,47 +53,45 @@ nav ul {
   gap: 30px;
   text-decoration: none;
   list-style: none;
-  /* margin-top: 30px; */
 }
 
-.home-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
+/* Header Section */
+#banner {
+  height: 754px;
+  padding: 0 150px;
+  color: var(--bg-color);
+  background-image: linear-gradient(
+      90deg,
+      rgb(24, 24, 24),
+      rgba(24, 24, 24, 0.82) 24.479%,
+      rgba(24, 24, 24, 0) 100%
+    ),
+    url(images/others/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
+
 .home-contant {
-  width: 490px;
+  width: 700px;
+  margin-top: 134px;
 }
 .home-title {
-  font-size: 48px;
-  font-weight: 600;
-  margin-bottom: 18px;
+  font-size: 65px;
+  font-weight: 700;
+  margin-bottom: 30px;
 }
-.home-sub-title {
-  font-size: 14px;
-  font-weight: 300;
-}
+
 .home-description {
   font-size: 16px;
   font-weight: 300;
-  margin-bottom: 21px;
+  margin-bottom: 40px;
 }
-.home-image {
-  width: 552px;
-  height: 447px;
-}
-
-.home-image img {
-  width: 100%;
-}
-
 .btn {
   color: var(--bg-color);
-  font-size: 16px;
-  font-weight: 500;
-  padding: 10px 24px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 17px 52px;
   border: none;
   border-radius: 5px;
   background: var(--btn-color);
@@ -130,15 +127,23 @@ nav ul {
   border: 1px solid rgb(231, 111, 81);
 }
 .bikes-images {
-  display: grid;
+  width: 1171px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  grid-template-columns: repeat(3, 1fr);
+  flex-wrap: wrap;
   margin: 120px;
-  gap: 138;
   border: 5px solid red;
 }
+.bike-image {
+  flex: 1;
+  margin: 10px;
+  max-width: 30%;
+}
 .bike-image img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* latest News Section */
@@ -252,6 +257,7 @@ nav ul {
 }
 .faq-image {
   width: 100%;
+  height: auto;
 }
 .faq-item {
   width: 100%;
@@ -283,16 +289,17 @@ footer {
   height: 365px;
   background-color: var(--text-color1);
   color: var(--bg-color);
-  display: flex;
-  /* justify-content: cen; */
-  align-items: center;
+  padding: 20px 0;
 }
+
 .footer-container {
-  margin: 0 165px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Manrope", sans-serif;
+  flex-wrap: wrap;
 }
 .footer-1 {
   display: flex;
